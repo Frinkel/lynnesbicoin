@@ -1,5 +1,14 @@
 #### Lynnesbicoin - A memecoin, built off of Turtlecoin
 
+##### Some Details about Lynnesbicoin
+- Total amount of Lynnesbicoins to be made: 69,696,969,696,969.69
+- Premined lynnesbicoins: 69,420.69
+- Targeted block time: 5 minutes/block
+- Address Prefix: gay1
+- Default P2P port: 42069
+- Default RPC port: 42070
+
+
 ##### Building
 
 - `git clone https://github.com/Frinkel/lynnesbicoin`
