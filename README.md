@@ -57,7 +57,7 @@ Run `./src/Lynnesbicoind` to connect to the network and let it sync (it may take
 #### Windows 10
 
 - Uhhhh tbh not sure 100% if it can be built in windows yet, plz use linux
-- You might just be able to use the directions for TurtleCoin, just replace all instances of Turtlecoin with Lynnesbiancoin
+- You might just be able to use the directions for TurtleCoin, just replace all instances of Turtlecoin with Lynnesbicoin
 
 #### Thank You
 Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community
