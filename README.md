@@ -1,40 +1,18 @@
-![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
+#### Lynnesbicoin - A memecoin, built off of Turtlecoin
 
-#### Master Build Status
-[![Build Status](https://travis-ci.org/turtlecoin/turtlecoin.svg?branch=master)](https://travis-ci.org/turtlecoin/turtlecoin) [![Build status](https://ci.appveyor.com/api/projects/status/github/turtlecoin/turtlecoin?branch=master&svg=true)](https://ci.appveyor.com/project/RocksteadyTC/turtlecoin)
+##### Some Details about Lynnesbicoin
+- Total amount of Lynnesbicoins to be made: 69,696,969,696,969.69
+- Premined lynnesbicoins: 69,420.69
+- Targeted block time: 5 minutes/block
+- Address Prefix: gay1
+- Default P2P port: 42069
+- Default RPC port: 42070
 
-#### Development Build Status
-[![Build Status](https://travis-ci.org/turtlecoin/turtlecoin.svg?branch=development)](https://travis-ci.org/turtlecoin/turtlecoin) [![Build status](https://ci.appveyor.com/api/projects/status/github/turtlecoin/turtlecoin?branch=development&svg=true)](https://ci.appveyor.com/project/RocksteadyTC/turtlecoin)
-
-### How To Compile
-
-#### Ubuntu LTS and MacOS 10.10+
-
-There is a bash installation script for Ubuntu 16.04+ and MacOS 10.10+ which can be used to checkout and build the project from source:
-
-`$ curl -sL "https://raw.githubusercontent.com/turtlecoin/turtlecoin/master/scripts/multi_installer.sh" | bash `
-
-On Ubuntu you will be asked for sudo rights to install software. The binaries will be in `./src` after compilation is complete.
-
-This script can be used from inside the git repository to build the project from the checked out source, `./multi_installer.sh`
-
-See the script for more installation details and please consider extending it for your operating system and distribution!
-
-If the script doesn't work for you:
-
-#### [new!] Raspberry Pi 3 B+
-The following images are known to work.
-
-##### OS Distribution
-
-- https://github.com/Crazyhead90/pi64/releases
-- https://fedoraproject.org/wiki/Architectures/ARM/Raspberry_Pi#aarch64_supported_images_for_Raspberry_Pi_3
-- https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone https://github.com/Frinkel/lynnesbicoin`
+- `cd lynnesbicoin`
 - `mkdir build && cd $_`
 - `cmake ..`
 - `make`
@@ -49,8 +27,8 @@ The following images are known to work.
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone https://github.com/Frinkel/lynnesbicoin`
+- `cd lynnesbicoin`
 - `mkdir build && cd $_`
 - `cmake ..`
 - `make`
@@ -65,8 +43,8 @@ The following images are known to work.
 
 ##### Building
 
-- `git clone -b master https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master https://github.com/Frinkel/lynnesbicoin`
+- `cd lynnesbicoin`
 - `mkdir build && cd $_`
 - `cmake ..` or `cmake -DBOOST_ROOT=<path_to_boost_install> ..` when building
   from a specific boost install. If you used brew to install boost, your path is most likely `/usr/local/include/boost.`
@@ -74,38 +52,13 @@ The following images are known to work.
 
 The binaries will be in `./src` after compilation is complete.
 
-Run `./src/TurtleCoind` to connect to the network and let it sync (it may take a while).
+Run `./src/Lynnesbicoind` to connect to the network and let it sync (it may take a while).
 
 #### Windows 10
 
-##### Prerequisites
-- Install [Visual Studio 2017 Community Edition](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&page=inlineinstall)
-- When installing Visual Studio, it is **required** that you install **Desktop development with C++** and the **VC++ v140 toolchain** when selecting features. The option to install the v140 toolchain can be found by expanding the "Desktop development with C++" node on the right. You will need this for the project to build correctly. This item will be called something like `VC++ 2015.3 v14.00 (v140) toolset for desktop`
-- Install [Boost 1.59.0](https://sourceforge.net/projects/boost/files/boost-binaries/1.59.0/), ensuring you download the installer for MSVC 14.
+- Uhhhh tbh not sure 100% if it can be built in windows yet, plz use linux
+- You might just be able to use the directions for TurtleCoin, just replace all instances of Turtlecoin with Lynnesbicoin
 
-##### Building
-
-- From the start menu, open 'x64 Native Tools Command Prompt for vs2017'.
-- `cd <your_turtlecoin_directory>`
-- `mkdir build`
-- `cd build`
-- Set the PATH variable for cmake: ie. `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
-- `cmake -G "Visual Studio 14 Win64" .. -DBOOST_ROOT=C:/local/boost_1_59_0` (Or your boost installed dir.)
-- `MSBuild TurtleCoin.sln /p:Configuration=Release /m`
-- If all went well, it will complete successfully, and you will find all your binaries in the '..\build\src\Release' directory.
-- Additionally, a `.sln` file will have been created in the `build` directory. If you wish to open the project in Visual Studio with this, you can.
-
-#### Thanks
+#### Thank You
 Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community
-
-### Copypasta for license when editing files
-
-Hi TurtleCoin contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h](https://github.com/turtlecoin/turtlecoin/commit/28cfef2575f2d767f6e512f2a4017adbf44e610e) for an example.
-
-```
-// Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
-// Copyright (c) 2014-2018, The Monero Project
-// Copyright (c) 2018, The TurtleCoin Developers
-// 
-// Please see the included LICENSE file for more information.
-```
+Especially thank you to the TurtleCoin community/devs for creating (from what I've seen) the only halfway decent altcoin fork tutorial.
