@@ -26,5 +26,8 @@ struct CheckpointData {
   const char* blockId;
 };
 
-const std::initializer_list<CheckpointData> CHECKPOINTS = {};
+const std::initializer_list<CheckpointData> CHECKPOINTS = {
+{       0, "0ba42596d81fbed9f80db756ca240268070dfc14337187e9d14423a7317ad33c"},
+{      69, "ffac552ade545409d56212c182582f5f557020d31dfe314b2dd1506169fa5c6b"}
+};
 }
